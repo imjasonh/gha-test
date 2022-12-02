@@ -11,6 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: imjasonh/setup-crane@main
       - run: cat ~/.docker/config.json
+      - uses: imjasonh/setup-crane@main
+      - run: crane catalog index.docker.io
       - run: crane cp alpine githubactions/alpine
