@@ -9,9 +9,6 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
-      - run: cat ~/.docker/config.json
-      - uses: imjasonh/setup-crane@main
-      - run: crane catalog index.docker.io
-      - run: crane cp alpine githubactions/alpine
+      - run: man shortcuts
